@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login.css">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      text-align: center;
+    }
+    
+    .login-container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 150px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .login-container .g-signin2 {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .login-container .g-signin2:hover {
+      background-color: #45a049;
+    }
+  </style>
+  
+  <!-- Add the Google Sign-In API -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <script src="external-script.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" name="username" required>
+      <br>
+      <input type="password" placeholder="Password" name="password" required>
+      <br>
+      <input type="submit" value="Login">
+    </form>
+    <button data-testid="google-login" class="Button-sc-y0gtbx-0 jJyUnh sc-cjibBx bDnraT"
+    data-encore-id="buttonSecondary"><span name="new-google-icon" class="sc-jcMfQk hgOqfw">
+    </span><span class="Type__TypeElement-sc-goli3j-0 kwLSIj sc-eDvSVe sc-ksBlkl sc-fnGiBr 
+    itlAHd kDeouY cKIvKK" data-encore-id="type">Continue with Google
+    </span></button>
+</body>
+</html>
